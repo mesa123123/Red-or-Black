@@ -12,6 +12,7 @@ export default {
 
 <style scoped>
 @import "../assets/styles.css";
+
 #headerCell {
   color: #dbc38a;
   font-size: 3vw;

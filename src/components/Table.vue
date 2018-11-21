@@ -1,22 +1,20 @@
 <template>
   <div id="table">
-    <div id="table-side" >
+    <div class="table-side">
       <div class="cardSlot">
-        <img src='../assets/cardBackImg.svg' alt="card" height="45%" width="30%"/>
+        <img class="card" src='../assets/cardBackImg.svg' height="100%" alt="card"/>
       </div>
       <div class="cardSlot">
-        <img src='../assets/cardBackImg.svg' alt="card" height="45%" width="30%"/>
+        <img class="card" src='../assets/cardBackImg.svg' height="100%" alt="card"/>
       </div>
     </div>
-    <div id='table-side'>
-      <div id="SelectByChip">
-        <chipSelect/>
+    <chipSelect/>
+    <div class='table-side'>
+      <div class="cardSlot">
+        <img class="card" src='../assets/cardBackImg.svg' height="100%" alt="card"/>
       </div>
       <div class="cardSlot">
-        <img src='../assets/cardBackImg.svg' alt="card" height="45%" width="30%"/>
-      </div>
-      <div class="cardSlot">
-        <img src='../assets/cardBackImg.svg' alt="card" height="45%" width="30%"/>
+        <img class="card" src='../assets/cardBackImg.svg' height="100%" alt="card"/>
       </div>
     </div>
   </div>
@@ -36,16 +34,27 @@ export default {
 @import "../assets/styles.css";
 
 #table {
-  display: inline;
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  width: 100vw;
+}
+
+.table-side {
+  display: flex;
+  flex-direction: row;
+  width: 40vw;
 }
 
 .cardSlot {
-  position: relative;
-  display: inline;
-  margin: 2%;
+  width: 18vw;
+  height: 80vh;
+  justify-content: center;
+  margin: 1vw;
 }
 
-#SelectByChip {
-  display: inline;
+.card {
+  width: 18vw;
+  height: 80vh;
 }
 </style>
